@@ -15,7 +15,7 @@ export class GoodReads extends Component {
     this.setState({
       loading: true
     })
-    axios.get(`http://cors-anywhere.herokuapp.com/https://www.goodreads.com/review/list/15082854.xml?key=${process.env.REACT_APP_API_KEY}&v=2`)
+    axios.get(`https://cors-anywhere.herokuapp.com/https://www.goodreads.com/review/list/15082854.xml?key=${process.env.REACT_APP_API_KEY}&v=2`)
     .then(res => {
       setTimeout(() => {
         const data = JSON.parse(
